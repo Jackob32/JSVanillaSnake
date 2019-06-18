@@ -1,3 +1,92 @@
+
+
+Keyboard.Keymap = {
+    37: 'left',
+    38: 'up',
+    39: 'right',
+    40: 'down'
+};
+
+function GameModel() {
+
+    this.maps = [];
+
+    this.currentMap = 0;
+
+    this.totalScore = 0;
+
+    this.nextMap = function() {
+        return this.telo.y;
+    };
+
+    this.previousMap = function() {
+        return this.telo.y;
+    };
+
+    this.initStep = function() {
+
+    };
+
+    this.getScore = function() {
+
+    };
+
+    this.getInfo = function() {
+
+    };
+
+}
+
+
+function GameController() {
+
+    Keyboard.ControllerEvents = function() {
+
+        // Setts
+        var self      = this;
+        this.pressKey = null;
+        this.keymap   = Keyboard.Keymap;
+
+        // Keydown Event
+        document.onkeydown = function(event) {
+            self.pressKey = event.which;
+        };
+
+        // Get Key
+        this.getKey = function() {
+            return this.keymap[this.pressKey];
+        };
+    };
+
+    this.maps = [];
+
+    this.currentMap = 0;
+
+    this.totalScore = 0;
+
+    this.nextMap = function() {
+        return this.telo.y;
+    };
+
+    this.previousMap = function() {
+        return this.telo.y;
+    };
+
+    this.initStep = function() {
+
+    };
+
+    this.getScore = function() {
+
+    };
+
+    this.getInfo = function() {
+
+    };
+
+}
+
+
 function had(barva, x, y) {
     this.barva = barva;
     this.telo = {
