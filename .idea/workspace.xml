@@ -1,61 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f240fd56-6954-4e4c-a87d-21a17ccd6d70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="f240fd56-6954-4e4c-a87d-21a17ccd6d70" name="Default Changelist" comment="WTF difference">
+      <change afterPath="$PROJECT_DIR$/game/Controller/event.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/Controller/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/Model/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oldindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oldscript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stylesheet.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="984">
-              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="200" column="2" lean-forward="true" selection-start-line="200" selection-start-column="2" selection-end-line="200" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Controller</find>
+      <find>Keyboard</find>
+      <find>getKey</find>
+      <find>Step</find>
+      <find>drawM</find>
+      <find>firstX</find>
+      <find>firstY</find>
+      <find>getElementById</find>
+      <find>Model</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>headY</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,17 +42,24 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/stylesheet.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/script.js" />
+        <option value="$PROJECT_DIR$/pokus/stylesheet.css" />
+        <option value="$PROJECT_DIR$/pokus.html" />
+        <option value="$PROJECT_DIR$/pokus/script.js" />
+        <option value="$PROJECT_DIR$/game/Controller/index.js" />
+        <option value="$PROJECT_DIR$/game/Model/index.js" />
+        <option value="$PROJECT_DIR$/game/index.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
-    <option name="y" value="-1080" />
-    <option name="width" value="974" />
-    <option name="height" value="1057" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1060" />
   </component>
+  <component name="ProjectId" id="1zavbmIfIRLLngnryAsx4KnZ57a" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -87,6 +72,23 @@
               <item name="JSVanillaSnake" type="b2602c69:ProjectViewProjectNode" />
               <item name="JSVanillaSnake" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JSVanillaSnake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSVanillaSnake" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSVanillaSnake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSVanillaSnake" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JSVanillaSnake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JSVanillaSnake" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -94,25 +96,32 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../goodtrust-web" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jakub\Projekty\JSVanillaSnake\game\Controller" />
+      <recent name="C:\Users\Jakub\Projekty\JSVanillaSnake" />
+      <recent name="C:\Users\Jakub\Projekty\JSVanillaSnake\game\Model" />
+      <recent name="C:\Users\Jakub\Projekty\JSVanillaSnake\game" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jakub\Projekty\JSVanillaSnake\game" />
+    </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -126,21 +135,53 @@
       <workItem from="1551550473695" duration="352000" />
       <workItem from="1560878192263" duration="1638000" />
       <workItem from="1562024381295" duration="661000" />
-      <workItem from="1562079943237" duration="1555000" />
+      <workItem from="1562079943237" duration="3814000" />
+      <workItem from="1562162220838" duration="1235000" />
+      <workItem from="1562846165276" duration="592000" />
+      <workItem from="1563112548993" duration="597000" />
+      <workItem from="1563135023610" duration="4139000" />
+      <workItem from="1563188749274" duration="585000" />
+      <workItem from="1563304974440" duration="6889000" />
+      <workItem from="1563402842018" duration="1878000" />
+      <workItem from="1563454171671" duration="5972000" />
+      <workItem from="1563800410872" duration="606000" />
+      <workItem from="1563836634794" duration="1208000" />
+      <workItem from="1563975416297" duration="599000" />
+      <workItem from="1564002159026" duration="4672000" />
+      <workItem from="1564043801275" duration="17971000" />
+      <workItem from="1564388523797" duration="4650000" />
+      <workItem from="1564660998991" duration="3480000" />
+      <workItem from="1565299488452" duration="2196000" />
+      <workItem from="1565771358011" duration="598000" />
+      <workItem from="1565794702921" duration="596000" />
+      <workItem from="1565859534373" duration="119000" />
+      <workItem from="1565988361679" duration="599000" />
+      <workItem from="1566210670634" duration="5339000" />
+      <workItem from="1566374676069" duration="597000" />
+      <workItem from="1566466850155" duration="248000" />
+      <workItem from="1634399088036" duration="28386000" />
     </task>
+    <task id="LOCAL-00001" summary="WTF difference">
+      <created>1562081928844</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562081928844</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4206000" />
+    <option name="totallyTimeSpent" value="71830000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="-1080" width="974" height="1057" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3653846" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28883013" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="DB Browser" order="3" />
+      <window_info id="DB Browser" order="3" weight="0.32954547" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -159,23 +200,79 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="WTF difference" />
+    <option name="LAST_COMMIT_MESSAGE" value="WTF difference" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheet.css">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="984">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+        <state relative-caret-position="24">
+          <caret line="9316" column="13" selection-start-line="9316" selection-start-column="13" selection-end-line="9316" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/game/stylesheet.css" />
+    <entry file="file://$PROJECT_DIR$/pokus/stylesheet.css" />
+    <entry file="file://$PROJECT_DIR$/pokus/script.js" />
+    <entry file="file://$PROJECT_DIR$/pokus.html" />
+    <entry file="file://$PROJECT_DIR$/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="e#1363#2442#0" />
+            <element signature="n#!!block;n#GameController#0" />
+            <element signature="n#!!block;n#had#0" />
+            <element signature="n#!!block;n#mapa#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/Controller/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/Model/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -187,10 +284,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="200" column="2" lean-forward="true" selection-start-line="200" selection-start-column="2" selection-end-line="200" selection-end-column="2" />
+        <state relative-caret-position="384">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
         </state>
       </provider>
     </entry>
