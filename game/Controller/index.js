@@ -31,7 +31,8 @@ export default function Controller(model) {
     };
 
     this.getModel = function() {
-        return   this.model  };
+        return   this.model
+    };
 
     // Keydown Event
     this.onKeyDown = function(event) {

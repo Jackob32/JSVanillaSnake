@@ -1,179 +1,162 @@
+import Map from "./Map.js";
+import Snake from "./Snake.js";
 
-/**
- * Map
- */
-let map=function(height, width, colourCnt) {
-    this.height = height;
-    this.width = width;
-    this.Map = [];
 
-    this.cnt = 0;
-    for (let i = 0; i < this.height; i++) {
-        this.Map[i] = [];
-        for (let p = 0; p < this.width; p++) {
-            this.Map[i][p] = "white";
-        }
-    }
+const randColors=[
+    "F44336",
+    "E91E63",
+    "9C27B0",
+    "7E57C2",
+    "5C6BC0",
+    "42A5F5",
+    "29B6F6",
+    "26C6DA",
+    "26A69A",
+    "66BB6A",
+    "9CCC65",
+    "D4E157",
+    "FFEB3B",
+    "FFEE58",
+    "FFCA28",
+    "FF9800",
+    "FF5722",
+];
 
-    this.Map[0][1] = "black";
-    this.Map[1][0] = "black";
-    this.Map[0][2] = "black";
-    this.Map[1][2] = "black";
-    this.Map[2][2] = "black";
-    this.Map[4][0] = "black";
-    this.Map[5][0] = "black";
-    this.Map[5][5] = "black";
-    this.Map[4][4] = "black";
-    this.Map[3][4] = "black";
-    this.Map[2][4] = "black";
-    this.Map[4][2] = "black";
-    this.Map[5][3] = "black";
-    this.Map[4][3] = "black";
-    this.Map[3][2] = "black";
-    this.Map[3][6] = "red";
-    this.Map[9][2] = "black";
-    this.Map[7][0] = "green";
-    this.Map[3][4] = "blue";
-
-    this.Map[5][0] = "black";
-    this.Map[7][5] = "black";
-    this.Map[6][4] = "black";
-    this.Map[8][4] = "black";
-    this.Map[7][4] = "black";
-    this.Map[7][2] = "black";
-    this.Map[8][3] = "black";
-    this.Map[7][3] = "black";
-
-    this.Map[5][5] = "black";
-    this.Map[7][9] = "black";
-    this.Map[6][6] = "black";
-    this.Map[8][8] = "black";
-    this.Map[7][7] = "black";
-    this.Map[7][6] = "black";
-    this.Map[8][5] = "black";
-    this.Map[7][9] = "black";
-    this.Map[8][1] = "black";
-    this.Map[8][2] = "black";
-    this.Map[3][5] = "black";
-    this.Map[0][9] = "black";
-    this.Map[2][6] = "black";
-    this.Map[5][8] = "black";
-    this.Map[4][7] = "black";
-    this.Map[2][6] = "black";
-    this.Map[4][5] = "black";
-    this.Map[2][9] = "black";
-
-    this.setIndexColour = function(x,y,colour) {
-        this.Map[x][y] = colour;
-    };
-    this.getIndexColour = function(x,y) {
-        return this.Map[x][y];
-    };
+const colors={
+    white:"white",
+    black:"black",
+    blue:"blue",
+    pink:"pink",
 }
+
+const getColor = function() {
+    return randColors[Math.floor(Math.random()*(randColors.length-1))];
+};
 
 /**
  * Model
  */
-export default function Model() {
+export default function Model(settings) {
 
     this.tick=0;
     this.score=0;
     this.maps = [];
-    this.maps.push(new map(10, 10));
+    this.maps.push(new Map(settings.size, settings.size));
     this.mapNumber=0;
     this.Snakes = [];
-    this.currentMap = new map(10, 10);
-    this.cntSnakes = 3;
-
+    this.cntSnakes = 1;
+    this.direction=0;
     this.totalScore = 0;
+    this.currentMap=this.maps[this.mapNumber];
 
     this.nextMap = function() {
-        return this.telo.y;
+        return this.body.y;
     };
 
     this.previousMap = function() {
-        return this.telo.y;
+        return this.body.y;
     };
+
+    this.init = function() {
+        this.initSnakes();
+    };
+
+    this.getCurrentMap = function() {
+        return this.maps[this.mapNumber];
+    };
+
     this.moveRight= function() {
-        console.log("moveRight");
+        this.direction=0;
     };
+
     this.moveLeft= function() {
-        console.log("moveLeft");
+        this.direction=1;
     };
+
     this.moveUp= function() {
-        console.log("moveUp");
+        this.direction=2;
         this.score++;
     };
+
     this.moveDown= function() {
-        console.log("moveDown");
+        this.direction=3;
         this.score--;
     };
 
-    this.moveSnakes = function() {
-        for (i = 0; i < this.cntSnakes; i++) {
-            x=this.Snakes[i].headX();
-            y=this.Snakes[i].headY();
-            lx=this.Snakes[i].tailX();
-            ly=this.Snakes[i].tailY();
-
-            this.currentMap.setIndexColour(lx,ly,"white")
-
-            if( this.currentMap.getIndexColour(x+1,y+1)=="blue"){
-                this.Snakes[i].move(x+1,y+1);
-            }else if(this.currentMap.getIndexColour(x+1,y)=="white"){
-                this.Snakes[i].move(x+1,y);
-            }else if(this.currentMap.getIndexColour(x+1,y+1)=="white"){
-                this.Snakes[i].move(x+1,y+1);
-            }else if(this.currentMap.getIndexColour(x,y+1)=="white"){
-                this.Snakes[i].move(x,y+1);
-            }else if(x>0){
-                if(this.currentMap.getIndexColour(x-1,y)=="white" ){
-                    this.Snakes[i].move(x-1,y);
-                }else if(this.currentMap.getIndexColour(x-1,y+1)=="white" ){
-                    this.Snakes[i].move(x-1,y+1);
-                }  }
-            else if(y>0){
-                if(this.currentMap.getIndexColour(x,y-1)=="white"  ){
-                    this.Snakes[i].move(x,y-1);
-                }else if(this.currentMap.getIndexColour(x+1,y-1)=="white"  ){
-                    this.Snakes[i].move(x+1,y-1);
-                }}
-            else if(y>0 && x>0){
-                if(this.currentMap.getIndexColour(x-1,y-1)=="white" ){
-                    this.Snakes[i].move(x-1,y-1);
-                }
-            }
-            for(let b=0;b<this.Snakes[i].getLength;b++){
-                x=this.Snakes[i].getX(b);
-                y=this.Snakes[i].getY(b);
-                this.currentMap.setIndexColour(x,y,this.Snakes[i].barva)
-            }
+    this.initSnakes = function() {
+        this.currentMap=this.getCurrentMap();
+        this.cnt = 0;
+        for (let i = 0; i < 1; i++) {
+            this.Snakes[i] = new Snake(getColor(), i, 0);
+            this.Snakes[i].add(i+1,0);
+            this.Snakes[i].add(i+2,0);
+            this.Snakes[i].add(i+3,0);
         }
     };
 
+    this.moveSnakes = function() {
+        for (let i = 0; i < this.cntSnakes; i++) {
+            let x = this.Snakes[i].headX();
+            let y = this.Snakes[i].headY();
+
+            if(this.direction===0 && x<this.currentMap.width-1){
+                if(this.currentMap.getIndexColour(x + 1,y) === colors.white){
+                    this.Snakes[i].move(x + 1, y);
+                }else if(this.currentMap.getIndexColour(x + 1,y) === colors.blue){
+                    this.Snakes[i].add(x + 1, y);
+                    this.currentMap.setIndexColour(x + 1, y,colors.white)
+                    this.currentMap.setRandomIndexColour(colors.blue)
+                }
+            }
+            if(this.direction===3 && y<this.currentMap.height-1){
+                if(this.currentMap.getIndexColour(x ,y+1) === colors.white){
+                    this.Snakes[i].move(x ,y+1);
+                }else if(this.currentMap.getIndexColour(x ,y+1) === colors.blue){
+                    this.Snakes[i].add(x ,y+1);
+                    this.currentMap.setIndexColour(x ,y+1,colors.white)
+                    this.currentMap.setRandomIndexColour(colors.blue)
+                }
+            }
+            if(this.direction===1 && x>0){
+                if(this.currentMap.getIndexColour(x -1,y) === colors.white){
+                    this.Snakes[i].move(x -1,y);
+                }else if(this.currentMap.getIndexColour(x -1,y) === colors.blue){
+                    this.Snakes[i].add(x -1,y);
+                    this.currentMap.setIndexColour(x -1,y,colors.white)
+                    this.currentMap.setRandomIndexColour(colors.blue)
+                }
+            }
+            if(this.direction===2 && y>0){
+                if(this.currentMap.getIndexColour(x,y-1) === colors.white){
+                    this.Snakes[i].move(x,y-1);
+                }else if(this.currentMap.getIndexColour(x,y-1) === colors.blue){
+                    this.Snakes[i].add(x,y-1);
+                    this.currentMap.setIndexColour(x,y-1,colors.white)
+                    this.currentMap.setRandomIndexColour(colors.blue)
+                }
+            }
+
+
+        }
+    };
 
     this.update = function() {
-        console.log("model updated");
+        this.moveSnakes();
         this.tick++;
     };
 
     this.step = function() {
         let self=this;
-        console.log("Step "+self.cnt);
         self.cnt++;
         this.moveSnakes();
     };
 
-    this.initStep = function() {
-        this.currentMap=this.maps[this.mapNumber];
-
-        this.Snakes[0] = new had("red", 0, 0,1);
-        this.Snakes[1] = new had("blue", 0, 3,1);
-        this.Snakes[2] = new had("green", 1, 5,1);
-    };
-
     this.getScore = function() {
         return this.score
+    };
+
+    this.getDirection = function() {
+        return this.direction
     };
 
     this.setScore = function(score) {

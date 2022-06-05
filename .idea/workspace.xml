@@ -2,21 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f240fd56-6954-4e4c-a87d-21a17ccd6d70" name="Default Changelist" comment="WTF difference">
-      <change afterPath="$PROJECT_DIR$/game/Controller/event.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/Controller/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/Model/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oldindex.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oldscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/Model/Map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/Model/Snake.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/View/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Controller/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/Controller/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/Model/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/Model/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oldscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/oldscript.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -104,7 +111,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../goodtrust-web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/game/Model" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -112,9 +119,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jakub\Projekty\JSVanillaSnake\game\Model" />
       <recent name="C:\Users\Jakub\Projekty\JSVanillaSnake\game\Controller" />
       <recent name="C:\Users\Jakub\Projekty\JSVanillaSnake" />
-      <recent name="C:\Users\Jakub\Projekty\JSVanillaSnake\game\Model" />
       <recent name="C:\Users\Jakub\Projekty\JSVanillaSnake\game" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -159,7 +166,9 @@
       <workItem from="1566210670634" duration="5339000" />
       <workItem from="1566374676069" duration="597000" />
       <workItem from="1566466850155" duration="248000" />
-      <workItem from="1634399088036" duration="28386000" />
+      <workItem from="1634399088036" duration="35067000" />
+      <workItem from="1653153031323" duration="15322000" />
+      <workItem from="1654421063021" duration="14818000" />
     </task>
     <task id="LOCAL-00001" summary="WTF difference">
       <created>1562081928844</created>
@@ -212,6 +221,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="WTF difference" />

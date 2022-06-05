@@ -17,7 +17,6 @@ Keyboard.ControllerEvents = function() {
 
     // Keydown Event
     document.onkeydown = function(event) {
-        console.log(event);
         self.pressKey = event.code;
     };
 
@@ -66,16 +65,17 @@ function Snake(barva, x, y) {
 
     };
 
-    this.lastx = function() {
+
+    this.tailX = function() {
         return this.telo.x;
     };
-    this.firstx = function() {
+    this.headX = function() {
         return this.telo.x;
     };
-    this.lasty = function() {
+    this.tailY = function() {
         return this.telo.y;
     };
-    this.firsty = function() {
+    this.headY = function() {
         return this.telo.y;
     };
 
@@ -128,10 +128,10 @@ function Map(height, width) {
 
     this.moveSnakes = function() {
         for (i = 0; i < this.cntSnakes; i++) {
-            x = this.Snakes[i].firstx();
-            y = this.Snakes[i].firsty();
-            lx = this.Snakes[i].lastx();
-            ly = this.Snakes[i].lasty();
+            x = this.Snakes[i].headX();
+            y = this.Snakes[i].headY();
+            lx = this.Snakes[i].tailX();
+            ly = this.Snakes[i].tailY();
 
             if(direction===0 && x<this.width && this.Map[x + 1][y] === colors.white)
                 this.Snakes[i].move(x + 1, y);
@@ -144,8 +144,8 @@ function Map(height, width) {
 
             this.Map[lx][ly] = "white";
 
-            x = this.Snakes[i].firstx();
-            y = this.Snakes[i].firsty();
+            x = this.Snakes[i].headX();
+            y = this.Snakes[i].headY();
 
             this.Map[x][y] = this.Snakes[i].barva;
 
@@ -154,7 +154,6 @@ function Map(height, width) {
 
 
     this.moveSelection = function(evt) {
-        console.log("jeje");
         switch (evt.keyCode) {
             case 37:
                 this.direction=2;
@@ -196,7 +195,6 @@ function Map(height, width) {
         this.cnt++;
         this.moveSnakes();
         this.drawMap();
-
     };
 }
 
